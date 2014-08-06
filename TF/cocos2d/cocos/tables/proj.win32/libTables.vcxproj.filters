@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tables">
+      <UniqueIdentifier>{e31ab7d3-b8b2-467f-9e08-fd5fe168b491}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\tables\libcsv.c">
+      <Filter>tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tables\TableHelper.cpp">
+      <Filter>tables</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\tables\TableHelper.h">
+      <Filter>tables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tables\csv.h">
+      <Filter>tables</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
