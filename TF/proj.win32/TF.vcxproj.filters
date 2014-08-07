@@ -19,6 +19,12 @@
     <Filter Include="Classes\utils">
       <UniqueIdentifier>{f8cc7234-4ca6-4342-9dad-9b7592ea763e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\map">
+      <UniqueIdentifier>{12a3b2ae-5189-455d-b4da-4b520d9e3e94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\fight">
+      <UniqueIdentifier>{b8a96b0b-998c-49b0-a610-820bab0404dc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -50,6 +56,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\utils\StringUtil.cpp">
       <Filter>Classes\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\map\ScriptMapScene.cpp">
+      <Filter>Classes\map</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\utils\StringUtil.h">
       <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\map\ScriptMapScene.h">
+      <Filter>Classes\map</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

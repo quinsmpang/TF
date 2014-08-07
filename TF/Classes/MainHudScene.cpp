@@ -1,6 +1,7 @@
 #include "MainHudScene.h"
 #include "loader/LoaderManager.h"
 #include "loader/ResourceType.h"
+#include "map/ScriptMapScene.h"
 
 MainHudScene::MainHudScene()
 {
@@ -42,7 +43,8 @@ void MainHudScene::touchEvent(Ref *pSender, Widget::TouchEventType type)
 {
 	if (type == Widget::TouchEventType::ENDED)
 	{
-		log("=============>>>into script!");
+		log("=============>>>into scriptMap!");
+		Director::getInstance()->replaceScene(ScriptMapScene::scene());
 	}
 
 	

@@ -141,6 +141,7 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClCompile Include="..\Classes\loader\LoaderManager.cpp" />
     <ClCompile Include="..\Classes\LoadingScene.cpp" />
     <ClCompile Include="..\Classes\MainHudScene.cpp" />
+    <ClCompile Include="..\Classes\map\ScriptMapScene.cpp" />
     <ClCompile Include="..\Classes\utils\pugixml.cpp" />
     <ClCompile Include="..\Classes\utils\StringUtil.cpp" />
     <ClCompile Include="..\Classes\utils\Tools.cpp" />
@@ -154,6 +155,7 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClInclude Include="..\Classes\loader\ResourceType.h" />
     <ClInclude Include="..\Classes\LoadingScene.h" />
     <ClInclude Include="..\Classes\MainHudScene.h" />
+    <ClInclude Include="..\Classes\map\ScriptMapScene.h" />
     <ClInclude Include="..\Classes\ResourceType.h" />
     <ClInclude Include="..\Classes\TFMacro.h" />
     <ClInclude Include="..\Classes\utils\pugiconfig.hpp" />
