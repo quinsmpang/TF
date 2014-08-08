@@ -1,30 +1,55 @@
 #include "Stage.h"
 
-#define KEY 
-Expression key is undefined on line 3, column 15 in TableClass.ftl.
-The problematic instruction:
-----------
-==> ${key} [on line 3, column 13 in TableClass.ftl]
-----------
+#define KEY int2String(r->id)
 
-Java backtrace for programmers:
-----------
-freemarker.core.InvalidReferenceException: Expression key is undefined on line 3, column 15 in TableClass.ftl.
-	at freemarker.core.TemplateObject.assertNonNull(TemplateObject.java:124)
-	at freemarker.core.Expression.getStringValue(Expression.java:118)
-	at freemarker.core.Expression.getStringValue(Expression.java:93)
-	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
-	at freemarker.core.Environment.visit(Environment.java:208)
-	at freemarker.core.MixedContent.accept(MixedContent.java:92)
-	at freemarker.core.Environment.visit(Environment.java:208)
-	at freemarker.core.Environment.process(Environment.java:188)
-	at freemarker.template.Template.process(Template.java:237)
-	at com.cyou.px.generator.FileGenerator.createClass(FileGenerator.java:87)
-	at com.cyou.px.generator.FileGenerator.create(FileGenerator.java:37)
-	at com.cyou.px.generator.ExcelDataCreator.formaterData(ExcelDataCreator.java:21)
-	at com.cyou.px.PXDataGenerator.getDataFiles(PXDataGenerator.java:38)
-	at com.cyou.px.PXDataGenerator.getDataFiles(PXDataGenerator.java:32)
-	at com.cyou.px.PXDataGenerator.getDataFiles(PXDataGenerator.java:32)
-	at com.cyou.px.PXDataGenerator.getDataFiles(PXDataGenerator.java:32)
-	at com.cyou.px.PXDataGenerator.run(PXDataGenerator.java:65)
-	at com.cyou.px.PXDataGenerator.main(PXDataGenerator.java:95)
+namespace tables
+{
+	Stage::Stage(unsigned const char* data, size_t size)
+	{
+		InterDataCarrier carrier(data, size, fileName());
+		Error = carrier.Error;
+		if (!Error.empty())
+		{
+			return;
+		}
+
+		for (size_t i = 0; i < carrier.GetRecordCount(); i++)
+		{
+			std::unique_ptr<Stage_table> r(new Stage_table);
+			r->id = atoi(carrier.GetField(i, 0, "id").c_str());
+			r->data = carrier.GetField(i, 1, "data", true).c_str();
+
+			m_data[KEY] = std::move(r);
+		}
+	}
+
+	Stage::~Stage(void)
+	{
+
+	}
+
+	Stage_table* Stage::getStageVo(int id)
+	{
+		auto it = m_data.find(int2String(id));
+		if (it == m_data.end())
+		{
+			return nullptr;
+		} else {
+			return &(*(*it).second);
+		}
+	}
+
+	std::string Stage::int2String(int num)
+	{
+		std::stringstream ss;
+		std::string str;
+		ss<<num;
+		ss>>str;
+		return str;
+	}
+
+	const char* Stage::fileName()
+	{
+		return "staticdata/#LANGUAGE#/Stage.csv";
+	}
+}
