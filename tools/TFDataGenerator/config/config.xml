@@ -1,0 +1,6 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<Config>
+	<input path="D:\cocos2dx\git\trunk\TF\Resources\excel"/>
+	<output path="D:\cocos2dx\git\trunk\TF\Resources\staticdata" 
+		classPath="D:\cocos2dx\git\trunk\TF\cocos2d\cocos\tables\tables"/>
+</Config>
