@@ -12,10 +12,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\tables\csv.h" />
+    <ClInclude Include="..\tables\DataManager.h" />
+    <ClInclude Include="..\tables\Stage.h" />
     <ClInclude Include="..\tables\TableHelper.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\tables\DataManager.cpp" />
     <ClCompile Include="..\tables\libcsv.c" />
+    <ClCompile Include="..\tables\Stage.cpp" />
     <ClCompile Include="..\tables\TableHelper.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

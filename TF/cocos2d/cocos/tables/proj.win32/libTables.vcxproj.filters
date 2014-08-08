@@ -12,12 +12,24 @@
     <ClCompile Include="..\tables\TableHelper.cpp">
       <Filter>tables</Filter>
     </ClCompile>
+    <ClCompile Include="..\tables\DataManager.cpp">
+      <Filter>tables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tables\Stage.cpp">
+      <Filter>tables</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\tables\TableHelper.h">
       <Filter>tables</Filter>
     </ClInclude>
     <ClInclude Include="..\tables\csv.h">
+      <Filter>tables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tables\DataManager.h">
+      <Filter>tables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tables\Stage.h">
       <Filter>tables</Filter>
     </ClInclude>
   </ItemGroup>
