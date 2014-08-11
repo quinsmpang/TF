@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tmw_desert_spacing" tilewidth="32" tileheight="32" spacing="1" margin="1">
+  <image source="tmw_desert_spacing.png" width="265" height="199"/>
+  <terraintypes>
+   <terrain name="新地形" tile="-1"/>
+  </terraintypes>
+  <tile id="9">
+   <properties>
+    <property name="type" value="1"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="ground" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJydVLsOwyAMZOhLUdt0a6fAFHUq/P/XFSSQrifHjjucRMA+zmeTJYSwOFEcsRHW0x9oeVnJfwO8dUw747CGpJwjH+oZ+tk3SXckvr1YO5gzAlh727tXzB3PDvafNeIdReF7VNzg2/IbuaQaG8eh4gh8H8q1Zgn5G8cVNEr6NM3oA2qcw29fCulDjgzrtMGJ+leHPguninPHhfiicI/maRZ6z3zJ0M17Gt/oOfuaFb4WO2b8ZfgnvWWsOVG89o9ir0aPsxGP3nE/cGakWSrCOb9977wUIe8LxC0nwA==
+  </data>
+ </layer>
+ <objectgroup name="way_1" width="20" height="20" visible="0">
+  <object name="point1" type="start" x="609" y="546" width="29" height="27"/>
+  <object name="point2" x="386" y="545" width="29" height="27"/>
+  <object name="point3" x="385" y="514" width="29" height="27"/>
+  <object name="point4" x="354" y="514" width="29" height="27"/>
+  <object name="point5" x="350" y="414" width="29" height="27"/>
+  <object name="point6" x="190" y="415" width="29" height="27"/>
+  <object name="point7" x="193" y="546" width="29" height="27"/>
+  <object name="point8" x="2" y="545" width="29" height="27"/>
+  <object name="point9" x="1" y="289" width="29" height="27"/>
+  <object name="point10" x="193" y="290" width="29" height="27"/>
+  <object name="point11" x="194" y="258" width="29" height="27"/>
+  <object name="point12" x="321" y="257" width="29" height="27"/>
+  <object name="point13" x="322" y="321" width="29" height="27"/>
+  <object name="point14" x="354" y="321" width="29" height="27"/>
+  <object name="point15" x="353" y="353" width="29" height="27"/>
+  <object name="point16" x="450" y="353" width="29" height="27"/>
+  <object name="point17" x="449" y="322" width="29" height="27"/>
+  <object name="point18" x="482" y="321" width="29" height="27"/>
+  <object name="point19" x="481" y="195" width="29" height="27"/>
+  <object name="point20" x="415" y="194" width="29" height="27"/>
+  <object name="point21" x="417" y="161" width="29" height="27"/>
+  <object name="point22" x="97" y="161" width="29" height="27"/>
+  <object name="point23" x="97" y="66" width="29" height="27"/>
+  <object name="point24" x="226" y="66" width="29" height="27"/>
+  <object name="point25" x="226" y="34" width="29" height="27"/>
+  <object name="point26" type="end" x="608" y="32" width="29" height="27"/>
+  <object name="ta" x="40" y="329" width="34" height="29"/>
+ </objectgroup>
+ <objectgroup name="towers" width="20" height="20">
+  <object name="tower" x="324" y="450" width="24" height="24"/>
+  <object name="tower" x="226" y="450" width="24" height="24"/>
+  <object name="tower" x="165" y="259" width="24" height="24"/>
+  <object name="tower" x="130" y="97" width="24" height="24"/>
+  <object name="tower" x="388" y="323" width="24" height="24"/>
+  <object name="tower" x="451" y="225" width="24" height="24"/>
+  <object name="tower" x="284" y="194" width="24" height="24"/>
+  <object name="tower" x="33" y="321" width="24" height="24"/>
+  <object name="tower" x="33" y="517" width="24" height="24"/>
+ </objectgroup>
+</map>
