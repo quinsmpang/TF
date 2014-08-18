@@ -1,16 +1,6 @@
 ﻿<?xml version = "1.0" encoding = "utf-8"?>
 <files>
 	<synchronizationLoader>
-		<item url="compress/stage_1.png"></item>	
-		<item url="compress/stage_2.png"></item>
-		<item url="compress/stage_3.png"></item>
-		<item url="compress/stage_4.png"></item>
-		<item url="compress/stage_5.png"></item>
-		<item url="compress/stage_6.png"></item>
-		<item url="compress/stage_7.png"></item>
-		<item url="compress/stage_8.png"></item>
-		<item url="compress/stage_9.png"></item>
-		<item url="compress/stage_10.png"></item>
 		<item url="compress/stageBtn.png"></item>
 	</synchronizationLoader>
 </files>

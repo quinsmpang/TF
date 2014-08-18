@@ -1,5 +1,6 @@
 #include "ScriptMapScene.h"
 #include "loader/ResourceType.h"
+#include "fight/FightScene.h"
 
 ScriptMapScene::ScriptMapScene()
 {
@@ -25,7 +26,7 @@ bool ScriptMapScene::init(){
 		return false;
 	}
 
-	Button* btn = Button::create(STAGE_1, STAGE_2);
+	Button* btn = Button::create(STAGE_BTN, STAGE_BTN);
 	btn->addTouchEventListener(CC_CALLBACK_2(ScriptMapScene::touchEvent, this));
 	btn->setPosition(Vec2(600, 600));
 	this->addChild(btn);

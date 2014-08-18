@@ -51,6 +51,6 @@ namespace tables
 
 	const char* ${className}::fileName()
 	{
-		return "staticdata/#LANGUAGE#/${className}.csv";
+		return "${className}.csv";
 	}
 }

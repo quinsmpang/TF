@@ -28,7 +28,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
 	// create a scene. it's an autorelease object
 	//auto scene = HelloWorld::createScene();
-	FileUtils::getInstance()->addSearchPath("compress");
+	FileUtils::getInstance()->addSearchPath("Resources/compress");
 	// run
 	//director->runWithScene(scene);
 	GameController::getInstance()->run();

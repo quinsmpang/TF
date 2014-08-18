@@ -47,8 +47,8 @@ void LoadingScene::onEnter()
 
 void LoadingScene::onExit()
 {
-	//_loadingThread->join();
-	//CC_SAFE_DELETE(_loadingThread);
+	_loadingThread->join();
+	CC_SAFE_DELETE(_loadingThread);
 }
 
 void LoadingScene::setProcess(int p)
@@ -75,8 +75,8 @@ void LoadingScene::updateLoading(const int state)
 		GameController::getInstance()->run();
 		break;
 	case LoadingEnum::LOAD_RESOURCE:
-		//_loadingThread = new std::thread(&LoadingScene::loadRes, this);
-		GameController::getInstance()->run();
+		_loadingThread = new std::thread(&LoadingScene::loadRes, this);
+		//GameController::getInstance()->run();
 		break;
 	default:
 		break;

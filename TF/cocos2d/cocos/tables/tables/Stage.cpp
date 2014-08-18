@@ -50,6 +50,6 @@ namespace tables
 
 	const char* Stage::fileName()
 	{
-		return "staticdata/#LANGUAGE#/Stage.csv";
+		return "Stage.csv";
 	}
 }

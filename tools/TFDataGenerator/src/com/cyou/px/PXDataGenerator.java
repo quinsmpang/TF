@@ -32,11 +32,8 @@ public class PXDataGenerator {
 				getDataFiles(fs);
 			}
 		} else {
-			if (file.getPath().indexOf(File.separator + "staticdata" + File.separator) != -1)
-			{
-				ExcelDataCreator excel = new ExcelDataCreator();
-				excel.formaterData(file);
-			}
+			ExcelDataCreator excel = new ExcelDataCreator();
+			excel.formaterData(file);
 		}
 	}
 	

@@ -127,18 +127,9 @@ public class FileGenerator {
 		}
 		String result = sbuff.substring(0, sbuff.length() - 1) + "]";
 		System.out.println(result);
-		if (file.getAbsolutePath().indexOf("cnData") != -1) {
-			PXDataGenerator.classNameList.add(file.getName());
-			FileUtil.write(
-					ConfigManager.outputPath + File.separator + "cnData"
-							+ File.separator + getVoClassName(file.getName())
-							+ ".json", result);
-		} else if (file.getAbsolutePath().indexOf("enData") != -1) {
-			FileUtil.write(
-					ConfigManager.outputPath + File.separator + "enData"
-							+ File.separator + getVoClassName(file.getName())
-							+ ".json", result);
-		}
+		FileUtil.write(
+				ConfigManager.outputPath + File.separator + getVoClassName(file.getName())
+						+ ".json", result);
 	}
 
 	public void createCSVFile(File file, String[][] arr) {
@@ -156,18 +147,11 @@ public class FileGenerator {
 			}
 			sbuff.append("\n");
 		}
-		if (file.getAbsolutePath().indexOf("cnData") != -1) {
-			PXDataGenerator.classNameList.add(file.getName());
-			FileUtil.write(
-					ConfigManager.outputPath + File.separator + "cnData"
-							+ File.separator + getVoClassName(file.getName())
-							+ ".csv", sbuff.toString());
-		} else if (file.getAbsolutePath().indexOf("enData") != -1) {
-			FileUtil.write(
-					ConfigManager.outputPath + File.separator + "enData"
-							+ File.separator + getVoClassName(file.getName())
-							+ ".csv", sbuff.toString());
-		}
+	
+		PXDataGenerator.classNameList.add(file.getName());
+		FileUtil.write(
+				ConfigManager.outputPath + File.separator + getVoClassName(file.getName())
+						+ ".csv", sbuff.toString());
 	}
 
 	/**

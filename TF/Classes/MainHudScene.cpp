@@ -31,10 +31,16 @@ bool MainHudScene::init()
 	//LoaderManager::getInstance()->addSpriteFramesWithFile("compress/test.plist");
 
 
-	Button* btn = Button::create(STAGE_1, STAGE_2);
+	Button* btn = Button::create(STAGE_BTN, STAGE_BTN);
 	btn->addTouchEventListener(CC_CALLBACK_2(MainHudScene::touchEvent, this));
 	btn->setPosition(Vec2(400, 400));
 	this->addChild(btn);
+
+
+	auto sp = Sprite::create(STAGE_BTN);
+	this->addChild(sp);
+
+
 
 	return true;
 }
