@@ -137,6 +137,9 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\fight\FightScene.cpp" />
+    <ClCompile Include="..\Classes\fight\MapManager.cpp" />
+    <ClCompile Include="..\Classes\fight\Monster.cpp" />
+    <ClCompile Include="..\Classes\fight\MonsterManager.cpp" />
     <ClCompile Include="..\Classes\GameController.cpp" />
     <ClCompile Include="..\Classes\loader\LoaderItem.cpp" />
     <ClCompile Include="..\Classes\loader\LoaderManager.cpp" />
@@ -151,6 +154,9 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\fight\FightScene.h" />
+    <ClInclude Include="..\Classes\fight\MapManager.h" />
+    <ClInclude Include="..\Classes\fight\Monster.h" />
+    <ClInclude Include="..\Classes\fight\MonsterManager.h" />
     <ClInclude Include="..\Classes\GameController.h" />
     <ClInclude Include="..\Classes\loader\LoaderItem.h" />
     <ClInclude Include="..\Classes\loader\LoaderManager.h" />

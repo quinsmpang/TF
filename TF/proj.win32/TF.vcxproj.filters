@@ -20,7 +20,7 @@
       <UniqueIdentifier>{12a3b2ae-5189-455d-b4da-4b520d9e3e94}</UniqueIdentifier>
     </Filter>
     <Filter Include="Classes\fight">
-      <UniqueIdentifier>{b8a96b0b-998c-49b0-a610-820bab0404dc}</UniqueIdentifier>
+      <UniqueIdentifier>{a5f267cc-bc49-4ec3-9303-fb180a12922a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -57,7 +57,18 @@
     <ClCompile Include="..\Classes\map\ScriptMapScene.cpp">
       <Filter>Classes\map</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\fight\FightScene.cpp" />
+    <ClCompile Include="..\Classes\fight\FightScene.cpp">
+      <Filter>Classes\fight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\fight\MapManager.cpp">
+      <Filter>Classes\fight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\fight\Monster.cpp">
+      <Filter>Classes\fight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\fight\MonsterManager.cpp">
+      <Filter>Classes\fight</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -105,7 +116,18 @@
     <ClInclude Include="..\Classes\map\ScriptMapScene.h">
       <Filter>Classes\map</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\fight\FightScene.h" />
+    <ClInclude Include="..\Classes\fight\FightScene.h">
+      <Filter>Classes\fight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\fight\MapManager.h">
+      <Filter>Classes\fight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\fight\Monster.h">
+      <Filter>Classes\fight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\fight\MonsterManager.h">
+      <Filter>Classes\fight</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">

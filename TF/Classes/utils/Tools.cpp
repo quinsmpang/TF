@@ -30,3 +30,11 @@ std::vector<std::string> Tools::splitStr(const std::string &str, const std::stri
     return vec;
 }
 
+
+float Tools::str2num(const std::string &str)
+{
+	float f;
+	std::stringstream ff(str);
+	ff >> f;
+	return f;
+}

@@ -18,6 +18,7 @@ public:
     
     static std::vector<std::string> splitStr(const std::string &str, const std::string &ch);
 
+	static float str2num(const std::string &str);
 };
 
 

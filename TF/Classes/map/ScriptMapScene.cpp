@@ -28,7 +28,7 @@ bool ScriptMapScene::init(){
 
 	Button* btn = Button::create(STAGE_BTN, STAGE_BTN);
 	btn->addTouchEventListener(CC_CALLBACK_2(ScriptMapScene::touchEvent, this));
-	btn->setPosition(Vec2(600, 600));
+	btn->setPosition(Vec2(100, 100));
 	this->addChild(btn);
 
 	return true;

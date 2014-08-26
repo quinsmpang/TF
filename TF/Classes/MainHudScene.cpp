@@ -27,7 +27,7 @@ bool MainHudScene::init()
 	{
 		return false;
 	}
-
+	auto size = Director::getInstance()->getWinSize();
 	//LoaderManager::getInstance()->addSpriteFramesWithFile("compress/test.plist");
 
 
@@ -35,11 +35,6 @@ bool MainHudScene::init()
 	btn->addTouchEventListener(CC_CALLBACK_2(MainHudScene::touchEvent, this));
 	btn->setPosition(Vec2(400, 400));
 	this->addChild(btn);
-
-
-	auto sp = Sprite::create(STAGE_BTN);
-	this->addChild(sp);
-
 
 
 	return true;
@@ -55,5 +50,6 @@ void MainHudScene::touchEvent(Ref *pSender, Widget::TouchEventType type)
 
 	
 }
+
 
 
