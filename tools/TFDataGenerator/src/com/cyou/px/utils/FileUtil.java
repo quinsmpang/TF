@@ -49,7 +49,7 @@ public class FileUtil {
 		getLogFile(filePath);
 		try{
 			ou = new FileOutputStream(filePath);
-			ps = new PrintStream(ou);
+			ps = new PrintStream(ou, false, "utf-8");
 			ps.println(code);
 			ou.close();
 			ps.close();
