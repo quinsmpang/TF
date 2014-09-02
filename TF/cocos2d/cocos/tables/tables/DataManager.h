@@ -16,8 +16,7 @@ public:
 
 	static DataManager* getInstance();
 
-	void loadTable(const loadCallback& callback, int localConfig);
-	std::string str_replace(std::string str, int config);
+	void loadTable(const loadCallback& callback, std::string localConfig);
 	
 	tables::Stage* m_Stage;
 

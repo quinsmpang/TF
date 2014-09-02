@@ -33,6 +33,7 @@ public:
 	void touchEvent(Ref *pSender, Widget::TouchEventType type);
 	void loadRes();
 	void loadResCallback(int p);
+	void loadTableCallback(int p);
 	void setProcess(int process);
 
 protected:

@@ -2,7 +2,7 @@
 
 #define LOAD_TABLE(tablePtr, tableClass, tableFile, callback, count) \
 	{\
-	std::string jsonpath = FileUtils::getInstance()->fullPathForFilename(str_replace(tableClass::fileName(), localConfig));\
+	std::string jsonpath = FileUtils::getInstance()->fullPathForFilename(tableFile);\
 	data = FileUtils::getInstance()->getDataFromFile(jsonpath);\
 	tablePtr = new tableClass(data.getBytes(), (int)data.getSize());\
 	count++;\
@@ -30,23 +30,11 @@ DataManager* DataManager::getInstance()
 	return _instance;
 }
 
-void DataManager::loadTable(const loadCallback& callback, int localConfig)
+void DataManager::loadTable(const loadCallback& callback, std::string localConfig)
 {
 	int count = 0;
 	Data data;
-		LOAD_TABLE(m_Stage, tables::Stage, str_replace(tables::Stage::fileName(), localConfig), callback, count);
+		LOAD_TABLE(m_Stage, tables::Stage, localConfig + "/" + tables::Stage::fileName(), callback, count);
 
 }
 
-std::string DataManager::str_replace(std::string str, int config)
-{
-	std::string toTag;
-	if (config == 0)
-	{
-		toTag = "cnData";
-	}else {
-		toTag = "enData";
-	}
-	str.replace(11, 10, toTag);
-	return str;
-}

@@ -28,11 +28,10 @@ MonsterManager* MonsterManager::getInstance()
 
 void MonsterManager::initStageData(int stage)
 {
-	/*auto data = STAGE_TABLE->getStageVo(stage);
+	auto data = STAGE_TABLE->getStageVo(stage);
 	if(data)
-	{*/
-	//¼ÙÊý¾ÝÌæ´ú
-		std::vector<std::string> wave = Tools::splitStr("1,0.5,1:1,0.5,1:1,0.5,1:1,0.5,1:2,1,1#2,0.5,1:1,0.5,1:1,0.5,1:1,0.5,1:2,1,1#3,0.5,1:1,0.5,1:1,0.5,1:1,0.5", "#");
+	{
+		std::vector<std::string> wave = Tools::splitStr(data->data, "#");
 		int i = 1;
 		for (auto str : wave)
 		{
@@ -40,9 +39,9 @@ void MonsterManager::initStageData(int stage)
 			waveMap[i] = str;
 			i++;
 		}
-	/*} else {
+	} else {
 		log("Error:Stage data is NULL!");
-	}*/
+	}
 	initMonsterByWave(1);
 }
 
@@ -53,7 +52,7 @@ void MonsterManager::initMonsterByWave(int wave)
 	for (auto monster : monsters)
 	{
 		log("monster>>%s", monster.c_str());
-		std::vector<std::string> parm = Tools::splitStr(monster, ",");
+		std::vector<std::string> parm = Tools::splitStr(monster, ";");
 		auto monster = new Monster();
 		monster->id = Tools::str2num(parm[0]);
 		monster->delayTime = Tools::str2num(parm[1]);

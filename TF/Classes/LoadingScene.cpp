@@ -1,6 +1,7 @@
 #include "LoadingScene.h"
 #include "GameController.h"
 #include "loader/LoaderManager.h"
+#include "tables/tables/DataManager.h"
 #include "utils/StringUtil.h"
 
 LoadingScene::LoadingScene()
@@ -72,7 +73,8 @@ void LoadingScene::updateLoading(const int state)
 		GameController::getInstance()->run();
 		break;
 	case LoadingEnum::LOAD_TABLES:
-		GameController::getInstance()->run();
+		DataManager::getInstance()->loadTable(CC_CALLBACK_1(LoadingScene::loadTableCallback, this), "staticdata");
+		//GameController::getInstance()->run();
 		break;
 	case LoadingEnum::LOAD_RESOURCE:
 		_loadingThread = new std::thread(&LoadingScene::loadRes, this);
@@ -93,6 +95,17 @@ void LoadingScene::loadResCallback(int p)
 	log("===>>>%d", p);
 	setProcess(p);
 	if (p >= 100)
+	{
+		currState = LoadingEnum::LOAD_OVER;
+	}
+}
+
+void LoadingScene::loadTableCallback(int p)
+{
+	log("===>>>%d", p);
+	
+	setProcess(p / TABLESNUM * 100);
+	if (p >= TABLESNUM)
 	{
 		currState = LoadingEnum::LOAD_OVER;
 	}
