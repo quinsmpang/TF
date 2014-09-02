@@ -2,7 +2,7 @@
 
 #define LOAD_TABLE(tablePtr, tableClass, tableFile, callback, count) \
 	{\
-	std::string jsonpath = FileUtils::getInstance()->fullPathForFilename(tableClass::fileName());\
+	std::string jsonpath = FileUtils::getInstance()->fullPathForFilename(tableFile);\
 	data = FileUtils::getInstance()->getDataFromFile(jsonpath);\
 	tablePtr = new tableClass(data.getBytes(), (int)data.getSize());\
 	count++;\
@@ -30,12 +30,12 @@ DataManager* DataManager::getInstance()
 	return _instance;
 }
 
-void DataManager::loadTable(const loadCallback& callback, int localConfig)
+void DataManager::loadTable(const loadCallback& callback, std::string localConfig)
 {
 	int count = 0;
 	Data data;
 	<#list messages as message>
-	LOAD_TABLE(m_${message.name}, tables::${message.name}, tables::${message.name}::fileName(), callback, count);
+	LOAD_TABLE(m_${message.name}, tables::${message.name}, localConfig + "/" + tables::${message.name}::fileName(), callback, count);
 	</#list>
 
 }
