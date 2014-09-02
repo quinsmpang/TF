@@ -28,10 +28,11 @@ MonsterManager* MonsterManager::getInstance()
 
 void MonsterManager::initStageData(int stage)
 {
-	auto data = STAGE_TABLE->getStageVo(stage);
+	/*auto data = STAGE_TABLE->getStageVo(stage);
 	if(data)
-	{
-		std::vector<std::string> wave = Tools::splitStr(data->data, "#");
+	{*/
+	//¼ÙÊý¾ÝÌæ´ú
+		std::vector<std::string> wave = Tools::splitStr("1,0.5,1:1,0.5,1:1,0.5,1:1,0.5,1:2,1,1#2,0.5,1:1,0.5,1:1,0.5,1:1,0.5,1:2,1,1#3,0.5,1:1,0.5,1:1,0.5,1:1,0.5", "#");
 		int i = 1;
 		for (auto str : wave)
 		{
@@ -39,9 +40,9 @@ void MonsterManager::initStageData(int stage)
 			waveMap[i] = str;
 			i++;
 		}
-	} else {
+	/*} else {
 		log("Error:Stage data is NULL!");
-	}
+	}*/
 	initMonsterByWave(1);
 }
 

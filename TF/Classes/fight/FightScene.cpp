@@ -1,6 +1,7 @@
-#include "FightScene.h"
+#include "fight/FightScene.h"
 #include "TFMacro.h";
-#include "MonsterManager.h"
+#include "fight/MonsterManager.h"
+#include "fight/MapManager.h"
 
 FightScene::FightScene()
 {
@@ -11,12 +12,31 @@ FightScene::~FightScene()
 {
 }
 
+Scene* FightScene::scene()
+{
+	auto layer = FightScene::create();
+
+	auto scene = Scene::create();
+	scene->addChild(layer);
+
+	return scene;
+}
+
 bool FightScene::init()
 {
 	if (!Layer::init())
 	{
 		return false;
 	}
+
+	auto map = MapManager::getInstance()->initMap("tile/TF.tmx");
+	this->addChild(map);
+	map->setTag(MAP_TAG);
+
+	MONSTER_MANAGER->initStageData(1);
+	float delay = MONSTER_MANAGER->addOne(map);
+
+	this->schedule(schedule_selector(FightScene::onceUpdate), delay);
 
 
 	return true;

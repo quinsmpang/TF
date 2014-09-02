@@ -38,6 +38,8 @@ void ScriptMapScene::touchEvent(Ref *pSender, Widget::TouchEventType type)
 {
 	if (type == Widget::TouchEventType::ENDED)
 	{
+		Director::getInstance()->replaceScene(FightScene::scene());
+
 		log("=============>>>into script!");
 		
 	}
