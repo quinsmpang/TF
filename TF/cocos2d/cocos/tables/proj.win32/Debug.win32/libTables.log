@@ -1,0 +1,24 @@
+﻿生成启动时间为 2014-9-2 23:50:25。
+     1>项目“G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\tables\proj.win32\libTables.vcxproj”在节点 4 上(Build 个目标)。
+     1>ClCompile:
+         G:\visual studio\VC\bin\CL.exe /c /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\ /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\audio\include /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\editor-support" /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\extensions /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\win32 /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\desktop /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\glfw3\include\win32 /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /Z7 /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _LIB /D COCOS2DXWIN32_EXPORTS /D GL_GLEXT_PROTOTYPES /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\tables\DataManager.cpp ..\tables\Stage.cpp ..\tables\TableHelper.cpp
+         DataManager.cpp
+         Stage.cpp
+         TableHelper.cpp
+     1>..\tables\TableHelper.cpp(1): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
+                 命令行参数: 参见前面的“_CRT_SECURE_NO_WARNINGS”定义
+     1>g:\cocos2dx\workspace\tf\tf\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\tables\Stage.cpp)
+     1>g:\cocos2dx\workspace\tf\tf\cocos2d\cocos\base/ccUtils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\tables\DataManager.cpp)
+         G:\visual studio\VC\bin\CL.exe /c /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\ /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\audio\include /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\editor-support" /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\extensions /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\win32 /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\desktop /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\glfw3\include\win32 /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /Z7 /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _LIB /D COCOS2DXWIN32_EXPORTS /D GL_GLEXT_PROTOTYPES /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TC /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\tables\libcsv.c
+         libcsv.c
+       Lib:
+         G:\visual studio\VC\bin\Lib.exe /OUT:"G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libTables.lib" /NOLOGO Debug.win32\DataManager.obj
+         Debug.win32\libcsv.obj
+         Debug.win32\Stage.obj
+         Debug.win32\TableHelper.obj
+         libTables.vcxproj -> G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libTables.lib
+     1>已完成生成项目“G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\tables\proj.win32\libTables.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.11

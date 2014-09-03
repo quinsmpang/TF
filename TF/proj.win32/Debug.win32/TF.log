@@ -1,0 +1,93 @@
+﻿生成启动时间为 2014-9-3 22:19:25。
+     1>项目“G:\cocos2dx\workspace\TF\TF\proj.win32\TF.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\visual studio\VC\bin\CL.exe /c /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\editor-support" /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\audio\include /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\chipmunk\include\chipmunk /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\extensions /I..\Classes /I.. /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\win32 /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\desktop /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\glfw3\include\win32 /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\component\SpreadButton.cpp ..\Classes\fight\FightScene.cpp
+         SpreadButton.cpp
+         FightScene.cpp
+     1>g:\cocos2dx\workspace\tf\tf\cocos2d\cocos\base\ccutils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\Classes\component\SpreadButton.cpp)
+     1>g:\cocos2dx\workspace\tf\tf\cocos2d\cocos\base\ccutils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\Classes\fight\FightScene.cpp)
+     1>g:\cocos2dx\workspace\tf\tf\classes\fight\fightscene.cpp(2): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+       PreLinkEvent:
+         if not exist "G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\" mkdir "G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\"
+         xcopy /Y /Q "G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\websockets\prebuilt\win32\*.*" "G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\"
+         :VCEnd
+         复制了 2 个文件
+       Link:
+         G:\visual studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\TF.exe" /INCREMENTAL /NOLOGO /LIBPATH:G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\ /LIBPATH:G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libpng.lib libjpeg.lib libtiff.lib libwebp.lib libiconv.lib glfw3.lib freetype250.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\TF.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\TF.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         Debug.win32\AppDelegate.obj
+         Debug.win32\SpreadButton.obj
+         Debug.win32\FightScene.obj
+         Debug.win32\MapManager.obj
+         Debug.win32\Monster.obj
+         Debug.win32\MonsterManager.obj
+         Debug.win32\GameController.obj
+         Debug.win32\LoaderItem.obj
+         Debug.win32\LoaderManager.obj
+         Debug.win32\LoadingScene.obj
+         Debug.win32\MainHudScene.obj
+         Debug.win32\ScriptMapScene.obj
+         Debug.win32\pugixml.obj
+         Debug.win32\StringUtil.obj
+         Debug.win32\Tools.obj
+         Debug.win32\main.obj
+         G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libcocos2d.lib
+         G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libAudio.lib
+         G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libCocosStudio.lib
+         G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libTables.lib
+         G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libGUI.lib
+         G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libExtensions.lib
+         G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libchipmunk.lib
+     1>AppDelegate.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: 默认库“libcmt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: 默认库“libcmtd.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: 默认库“msvcrt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+     1>libjpeg.lib(jcapimin.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcapimin.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcapistd.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcapistd.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcarith.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcarith.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcparam.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcparam.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdatadst.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdatadst.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcinit.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcinit.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcmaster.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcmaster.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcmarker.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcmarker.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcmainct.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcmainct.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcprepct.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcprepct.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jccoefct.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jccoefct.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jccolor.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jccolor.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcsample.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcsample.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jchuff.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jchuff.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcdctmgr.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcdctmgr.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jfdctfst.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jfdctfst.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jfdctflt.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jfdctflt.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jfdctint.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jfdctint.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdapimin.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdapimin.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdapistd.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdapistd.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdarith.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdarith.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdatasrc.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdatasrc.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdmaster.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdmaster.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdinput.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdinput.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdmarker.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdmarker.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdhuff.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdhuff.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdmainct.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdmainct.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdcoefct.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdcoefct.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdpostct.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdpostct.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jddctmgr.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jddctmgr.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jidctfst.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jidctfst.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jidctflt.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jidctflt.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jidctint.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jidctint.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdsample.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdsample.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdcolor.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdcolor.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jquant1.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jquant1.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jquant2.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jquant2.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jdmerge.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jdmerge.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jaricom.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jaricom.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jcomapi.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jcomapi.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jutils.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jutils.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jerror.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jerror.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jmemmgr.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jmemmgr.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>libjpeg.lib(jmemnobs.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“libjpeg.lib(jmemnobs.obj)”或在“G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         TF.vcxproj -> G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\TF.exe
+     1>已完成生成项目“G:\cocos2dx\workspace\TF\TF\proj.win32\TF.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.58

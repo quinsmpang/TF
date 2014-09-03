@@ -1,0 +1,17 @@
+﻿生成启动时间为 2014-9-2 23:49:08。
+     1>项目“G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\audio\proj.win32\CocosDenshion.vcxproj”在节点 5 上(Build 个目标)。
+     1>ClCompile:
+         G:\visual studio\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include" /I..\Include /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\win32 /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\desktop /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\glfw3\include\win32 /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4251 /analyze- /errorReport:prompt ..\win32\MciPlayer.cpp ..\win32\SimpleAudioEngine.cpp
+         MciPlayer.cpp
+         SimpleAudioEngine.cpp
+     1>g:\cocos2dx\workspace\tf\tf\cocos2d\cocos\base\ccutils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\win32\SimpleAudioEngine.cpp)
+     1>g:\cocos2dx\workspace\tf\tf\cocos2d\cocos\2d\cclabel.h(276): warning C4244: “return”: 从“float”转换到“int”，可能丢失数据 (..\win32\SimpleAudioEngine.cpp)
+       Lib:
+         G:\visual studio\VC\bin\Lib.exe /OUT:"G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libAudio.lib" /NOLOGO Debug.win32\MciPlayer.obj
+         Debug.win32\SimpleAudioEngine.obj
+         CocosDenshion.vcxproj -> G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\libAudio.lib
+     1>已完成生成项目“G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\audio\proj.win32\CocosDenshion.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:01:23.91

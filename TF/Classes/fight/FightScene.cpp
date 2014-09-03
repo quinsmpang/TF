@@ -1,8 +1,9 @@
-#include "fight/FightScene.h"
+#include "fight\FightScene.h"
 #include "TFMacro.h";
-#include "fight/MonsterManager.h"
-#include "fight/MapManager.h"
+#include "fight\MonsterManager.h"
+#include "fight\MapManager.h"
 #include "ResourceType.h"
+#include "component\SpreadButton.h"
 
 FightScene::FightScene()
 {
@@ -49,6 +50,14 @@ bool FightScene::init()
 void FightScene::initTowerBtn()
 {
 	auto towers = MapManager::getInstance()->towers;
+
+	auto sbt = SpreadButton::create();
+
+	sbt->initSpread("", "", "");
+
+	sbt->setPosition(Point(100, 100));
+
+	this->addChild(sbt);
 
 	for (Point p : towers)
 	{
