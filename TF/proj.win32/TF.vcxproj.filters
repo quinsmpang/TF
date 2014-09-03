@@ -22,6 +22,9 @@
     <Filter Include="Classes\fight">
       <UniqueIdentifier>{a5f267cc-bc49-4ec3-9303-fb180a12922a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\component">
+      <UniqueIdentifier>{adec9c68-9fab-4b50-a807-3b5b880ea92a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -68,6 +71,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\fight\MonsterManager.cpp">
       <Filter>Classes\fight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\component\SpreadButton.cpp">
+      <Filter>Classes\component</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\fight\MonsterManager.h">
       <Filter>Classes\fight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\component\SpreadButton.h">
+      <Filter>Classes\component</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
