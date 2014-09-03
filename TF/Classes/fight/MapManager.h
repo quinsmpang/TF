@@ -18,7 +18,12 @@ public:
 
 	TMXTiledMap* getCurrMap(){ return _currMap; };
 
+public:
+	std::vector<Point> towers;
+
 private:
 	TMXTiledMap* _currMap;
+
+
 };
 

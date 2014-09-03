@@ -41,6 +41,7 @@ TMXTiledMap* MapManager::initMap(const std::string &filename)
 		float y = dict["y"].asFloat();
 		float width = dict["width"].asFloat();
 		float height = dict["height"].asFloat();
+		towers.push_back(Point(x, y));
 	}
 	return _currMap;
 }
