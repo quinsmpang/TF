@@ -21,6 +21,8 @@ public:
 	void quickCallback(Ref* sender);
 	void slowCallback(Ref* sender);
 
+	void initTowerBtn();
+
 	//touch
 	bool onTouchBegan(Touch *touch, Event *unused_event);
 	void onTouchMoved(Touch *touch, Event *unused_event);

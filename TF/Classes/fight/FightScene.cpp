@@ -2,6 +2,7 @@
 #include "TFMacro.h";
 #include "fight/MonsterManager.h"
 #include "fight/MapManager.h"
+#include "ResourceType.h"
 
 FightScene::FightScene()
 {
@@ -33,6 +34,9 @@ bool FightScene::init()
 	this->addChild(map);
 	map->setTag(MAP_TAG);
 
+	//³õÊ¼»¯Ëþ°´Å¥
+	initTowerBtn();
+
 	MONSTER_MANAGER->initStageData(1);
 	float delay = MONSTER_MANAGER->addOne(map);
 
@@ -42,6 +46,18 @@ bool FightScene::init()
 	return true;
 }
 
+void FightScene::initTowerBtn()
+{
+	auto towers = MapManager::getInstance()->towers;
+
+	for (Point p : towers)
+	{
+		auto sp = Sprite::create(TOWER_BTN);
+		sp->setPosition(p);
+		sp->setAnchorPoint(Point(0, 0));
+		this->addChild(sp);
+	}
+}
 
 void FightScene::onceUpdate(float f)
 {
