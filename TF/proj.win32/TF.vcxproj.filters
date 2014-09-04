@@ -72,7 +72,7 @@
     <ClCompile Include="..\Classes\fight\MonsterManager.cpp">
       <Filter>Classes\fight</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\component\SpreadButton.cpp">
+    <ClCompile Include="..\Classes\component\SpreadMenu.cpp">
       <Filter>Classes\component</Filter>
     </ClCompile>
   </ItemGroup>
@@ -134,7 +134,7 @@
     <ClInclude Include="..\Classes\fight\MonsterManager.h">
       <Filter>Classes\fight</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\component\SpreadButton.h">
+    <ClInclude Include="..\Classes\component\SpreadMenu.h">
       <Filter>Classes\component</Filter>
     </ClInclude>
   </ItemGroup>

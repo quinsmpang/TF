@@ -1,11 +1,9 @@
-﻿生成启动时间为 2014-9-3 22:19:25。
+﻿生成启动时间为 2014-9-5 1:18:23。
      1>项目“G:\cocos2dx\workspace\TF\TF\proj.win32\TF.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         G:\visual studio\VC\bin\CL.exe /c /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\editor-support" /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\audio\include /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\chipmunk\include\chipmunk /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\extensions /I..\Classes /I.. /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\win32 /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\desktop /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\glfw3\include\win32 /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\component\SpreadButton.cpp ..\Classes\fight\FightScene.cpp
-         SpreadButton.cpp
+         G:\visual studio\VC\bin\CL.exe /c /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\editor-support" /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\audio\include /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\chipmunk\include\chipmunk /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\extensions /I..\Classes /I.. /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\win32 /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\cocos\platform\desktop /IG:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\glfw3\include\win32 /I"G:\cocos2dx\workspace\TF\TF\cocos2d\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _VARIADIC_MAX=10 /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\fight\FightScene.cpp
          FightScene.cpp
-     1>g:\cocos2dx\workspace\tf\tf\cocos2d\cocos\base\ccutils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\Classes\component\SpreadButton.cpp)
-     1>g:\cocos2dx\workspace\tf\tf\cocos2d\cocos\base\ccutils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (..\Classes\fight\FightScene.cpp)
+     1>g:\cocos2dx\workspace\tf\tf\cocos2d\cocos\base\ccutils.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
      1>g:\cocos2dx\workspace\tf\tf\classes\fight\fightscene.cpp(2): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
        PreLinkEvent:
          if not exist "G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\" mkdir "G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\"
@@ -15,7 +13,7 @@
        Link:
          G:\visual studio\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\TF.exe" /INCREMENTAL /NOLOGO /LIBPATH:G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\ /LIBPATH:G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\ opengl32.lib glew32.lib libzlib.lib libpng.lib libjpeg.lib libtiff.lib libwebp.lib libiconv.lib glfw3.lib freetype250.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\TF.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\cocos2dx\workspace\TF\TF\proj.win32\Debug.win32\TF.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
          Debug.win32\AppDelegate.obj
-         Debug.win32\SpreadButton.obj
+         Debug.win32\SpreadMenu.obj
          Debug.win32\FightScene.obj
          Debug.win32\MapManager.obj
          Debug.win32\Monster.obj
@@ -90,4 +88,4 @@
 
 生成成功。
 
-已用时间 00:00:07.58
+已用时间 00:00:07.10

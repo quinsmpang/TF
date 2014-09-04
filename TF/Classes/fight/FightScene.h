@@ -30,6 +30,8 @@ public:
 
 	//еп╤о╠ъ╫Г
 	Point boundLayer(Point pos);
+
+	void menuCallback(int id, int subId);
 };
 
 #endif // __TF_FightScene_H__

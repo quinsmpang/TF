@@ -3,7 +3,7 @@
 #include "fight\MonsterManager.h"
 #include "fight\MapManager.h"
 #include "ResourceType.h"
-#include "component\SpreadButton.h"
+#include "component\SpreadMenu.h"
 
 FightScene::FightScene()
 {
@@ -51,13 +51,24 @@ void FightScene::initTowerBtn()
 {
 	auto towers = MapManager::getInstance()->towers;
 
-	auto sbt = SpreadButton::create();
+	//测试展开菜单
+	auto sbt = SpreadMenu::create();
+	sbt->initSpread(TOWER_BTN, TOWER_BTN, POSITION::CENTER, 1);
+	sbt->setPosition(Point(200, 200));
 
-	sbt->initSpread("", "", "");
+	std::vector<SpreadItem*> items;
 
-	sbt->setPosition(Point(100, 100));
+	auto item = new SpreadItem();
+	item->id = 1;
+	item->normal = MENU_ITEM_1;
+	item->down = MENU_ITEM_2;
+
+	items.push_back(item);
+
+	sbt->setItems(items, CC_CALLBACK_2(FightScene::menuCallback, this));
 
 	this->addChild(sbt);
+	//测试展开菜单结束
 
 	for (Point p : towers)
 	{
@@ -123,4 +134,9 @@ Point FightScene::boundLayer(Point pos)
 	retval.y = MAX(retval.y, -_map->getContentSize().height + winSize.height);
 
 	return retval;
+}
+
+void FightScene::menuCallback(int id, int subId)
+{
+	log("%d===%d", id, subId);
 }
