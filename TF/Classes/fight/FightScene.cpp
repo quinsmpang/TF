@@ -51,31 +51,42 @@ void FightScene::initTowerBtn()
 {
 	auto towers = MapManager::getInstance()->towers;
 
-	//测试展开菜单
-	auto sbt = SpreadMenu::create();
-	sbt->initSpread(TOWER_BTN, TOWER_BTN, POSITION::CENTER, 1);
-	sbt->setPosition(Point(200, 200));
-
-	std::vector<SpreadItem*> items;
-
-	auto item = new SpreadItem();
-	item->id = 1;
-	item->normal = MENU_ITEM_1;
-	item->down = MENU_ITEM_2;
-
-	items.push_back(item);
-
-	sbt->setItems(items, CC_CALLBACK_2(FightScene::menuCallback, this));
-
-	this->addChild(sbt);
-	//测试展开菜单结束
-
 	for (Point p : towers)
 	{
-		auto sp = Sprite::create(TOWER_BTN);
-		sp->setPosition(p);
-		sp->setAnchorPoint(Point(0, 0));
-		this->addChild(sp);
+		auto sbt = SpreadMenu::create();
+		sbt->initSpread(TOWER_BTN_NORMAL, TOWER_BTN_PRESS, POSITION::TOP_CENTER, 1);
+		sbt->setAnchorPoint(Point(0, 0));
+		sbt->setPosition(p);
+		this->addChild(sbt);
+
+		std::vector<SpreadItem*> items;
+
+		auto item = new SpreadItem();
+		item->id = 1;
+		item->normal = MENU_ITEM_1;
+		item->down = MENU_ITEM_2;
+
+		auto item2 = new SpreadItem();
+		item2->id = 2;
+		item2->normal = MENU_ITEM_1;
+		item2->down = MENU_ITEM_2;
+
+		auto item3 = new SpreadItem();
+		item3->id = 3;
+		item3->normal = MENU_ITEM_1;
+		item3->down = MENU_ITEM_2;
+
+		auto item4 = new SpreadItem();
+		item4->id = 4;
+		item4->normal = MENU_ITEM_1;
+		item4->down = MENU_ITEM_2;
+
+		items.push_back(item);
+		items.push_back(item2);
+		items.push_back(item3);
+		items.push_back(item4);
+
+		sbt->setItems(items, CC_CALLBACK_2(FightScene::menuCallback, this));
 	}
 }
 

@@ -7,7 +7,9 @@
 #define STAGE_2 "compress/stage_2.png"
 
 //fighting common
-#define TOWER_BTN "towerBtn.png"
+#define TOWER_BTN_NORMAL "towerBtnnormal.png"
+#define TOWER_BTN_PRESS "towerBtnpressed.png"
+#define TOWER "towerBtn.png"
 
 //ui
 #define MENU_ITEM_1 "item_1.png"

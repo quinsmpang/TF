@@ -16,13 +16,16 @@ This component is based on the Cocos2d-x 3.2 version.
 
 USING_NS_CC;
 
+#define MAIN_MENU_NAME "__APP_SpreadMenu_H__"
+
 enum POSITION
 {
-	TOP = 1,
-	DOWN = 2,
-	LEFT = 3,
-	RIGHT = 4,
-	CENTER = 0
+	TOP_LEFT = 1,
+	TOP_RIGHT = 2,
+	TOP_CENTER = 3,
+	DOWN_LEFT = 4,
+	DOWN_RIGHT = 5,
+	DOWN_CENTER = 6
 };
 
 typedef struct s_item
@@ -46,9 +49,19 @@ public:
 
 	void initSpread(const std::string &normal, const std::string &down, POSITION position, int id);
 
+	//WARN:item's id must be larger than 0.
 	void setItems(std::vector<SpreadItem*> items, std::function<void(int, int)> callback);
-	
+
+	void FadeIn();
+
+	void FadeOut();
 private:
+	Point getStartPoint(int w, int mw, int mh, int icount, int space);
+	//init sub items position
+	void initPosition();
+
+private:
+	Vector<MenuItem*> _menuVec;
 	std::function<void(int, int)> _callback;
 	std::string _normalTexture;
 	std::string _downTexture;
